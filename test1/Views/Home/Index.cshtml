@@ -1,0 +1,436 @@
+﻿@model IEnumerable<test1.Models.Products>
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Agency - Start Bootstrap Theme</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    @*<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="~/Content/datepicker.css" rel="stylesheet" />
+
+
+        @*<link rel="stylesheet" href="..\src\css\styles-dist.css">*@
+
+</head>
+
+<body vocab="http://schema.org/" id="page-top">
+
+    <div class="wrapper">
+         @*<div class="preloader"><div class="loader"></div></div>*@ 
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container" id="container-1240">
+                <div class="header-column width-max-506">
+                    <div class="masthead-subheading element-animation">
+                        Воздушные <br>
+                        кондитерские изделия <br>
+                        из натуральных продуктов
+                    </div>
+                    <div class="masthead-heading element-animation">
+                        <h5 class="h5-spacing">Превосходные десерты по сладкой цене с удобной</h5>
+                        <h5 class="h5-bigspacing">доставкой специально для Вас в Patetico&Dolce!</h5>
+                    </div>
+                    <div class="masthead-heading-2 element-animation">
+                        <h5 class="h5-spacing-2">
+                            Превосходные десерты по&nbsp;сладкой&nbsp;цене с удобной
+                            доставкой&nbsp;специально для&nbsp;Вас&nbsp;в&nbsp;Patetico&Dolce!
+                        </h5>
+                    </div>
+                    <a class="btn btn-primary btn-xl  js-scroll-trigger element-animation" href="#actuality">Сделать заказ</a>
+                </div>
+                <div class="header-column width506-5px element-animation">
+                    <div class="masthead-subheading">
+                        Воздушные
+                        кондитерские изделия
+                        из натуральных продуктов
+                    </div>
+                    <div class="masthead-heading">
+                        <h5 class="h5-spacing">Превосходные десерты по сладкой цене с удобной</h5>
+                        <h5 class="h5-bigspacing">доставкой специально для Вас в Patetico&Dolce!</h5>
+                    </div>
+                    <div class="masthead-heading-2">
+                        <h5 class="h5-spacing-2">
+                            Превосходные десерты по сладкой цене с удобной
+                            доставкой специально для Вас в Patetico&Dolce!
+                        </h5>
+                    </div>
+                    <a class="btn btn-primary btn-xl  js-scroll-trigger element-animation" href="#actuality">Сделать заказ</a>
+                </div>
+            </div>
+        </header>
+        <section class="section-advantages" id="using">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading  element-animation">Почему клиенты выбирают Patetico?</h2>
+                </div>
+                <div class="row  element-animation">
+                    <div class="col-md-4">
+                        <div class="header-row">
+                            <img src="/img/icon-cake-1.png" alt="">
+                            <div class="header-column">
+                                <h4 class="my-3">Свежие ингридиенты</h4>
+                                <p class="text-muted">
+                                    Наши поставщики не готовят впрок, потому что мы считаем, что
+                                    лучший
+                                    десерт – свежий десерт.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-row">
+                            <img src="~/img/icon-cake-2.png" alt="">
+                            <div class="header-column">
+                                <h4 class="my-3">Лучшие кондитеры</h4>
+                                <p class="text-muted">
+                                    Каждый десерт делается вручную влюбленными в свое дело людьми.
+                                    Мы любим, когда красиво.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-row">
+                            <img src="~/img/icon-cake-3.png" alt="">
+                            <div class="header-column">
+                                <h4 class="my-3 ">Связь с клиентом</h4>
+                                <p class="text-muted">
+                                    Мы уважаем наших покупателей и уделяем особое внимание подготовке
+                                    абсолютно каждого заказа.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="about">
+                <div class="container">
+                    <div class="header-column">
+                        <div class="using-subheading text-center">
+                            <h2 class="section-heading  element-animation">О нашей компании</h2>
+                        </div>
+                        <div class="using-heading  element-animation">
+                            <h5 class="">
+                                Любимым делом мы занимаемся с 1991 года! <br>
+                                За это время сотни тысяч человек разделили с нами
+                                самые&nbsp;счастливые и радостные моменты своей жизни.
+                            </h5>
+                            <h5 class="">
+                                Наши сладости из натуральных ингредиентов
+                                готовы&nbsp;порадовать&nbsp;Вас и Ваших близких!
+                            </h5>
+                            <h5 class="">
+                                Запасайтесь десертом, оформляйте заказ&nbsp;сейчас!
+                            </h5>
+                        </div>
+                        <a class="btn btn-primary btn-xl  js-scroll-trigger  element-animation" href="#actuality">Перейти к каталогу</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="section-reviews" id="measurements">
+            <div class="wrap">
+                <!-- Контент -->
+                <div class="container text-center" id="measurements-id">
+                    <div class="text-center">
+                        <h2 class="section-heading  element-animation">Наш ассортимент</h2>
+                    </div>
+                    <div class="slider  element-animation">
+                        <div class="slider__item">
+                            <img src="~/img/@Html.DisplayFor(model => Model.ToList()[6].img_product)" />
+
+                            <div class="header-column">
+                                <h4 class="my-2">@Html.DisplayFor(model => Model.ToList()[6].product_name)</h4>
+                                <h3>@Model.ToList()[6].price.ToString().Remove(3)<i class="fas fa-ruble-sign"></i></h3>
+                                <a @*href="#popup_details"*@ class="popup-link">
+                                    <p class="text-right" name="7" onclick="AddText(this)">Подробнее ></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="~/img/@Html.DisplayFor(model => Model.ToList()[7].img_product)" alt="">
+                            <div class="header-column">
+                                <h4 class="my-2">@Html.DisplayFor(model => Model.ToList()[7].product_name)</h4>
+                                <h3>@Model.ToList()[7].price.ToString().Remove(3)<i class="fas fa-ruble-sign"></i></h3>
+                                <a @*href="#popup_details"*@ class="popup-link">
+                                    <p class="text-right" name="8" onclick="AddText(this)">Подробнее ></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="~/img/@Html.DisplayFor(model => Model.ToList()[5].img_product)" alt="">
+                            <div class="header-column">
+                                <h4 class="my-2">@Html.DisplayFor(model => Model.ToList()[5].product_name)</h4>
+                                <h3>@Model.ToList()[5].price.ToString().Remove(3)<i class="fas fa-ruble-sign"></i></h3>
+                                <a @*href="#popup_details"*@ class="popup-link">
+                                    <p class="text-right" name="6" onclick="AddText(this)">Подробнее ></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="~/img/@Html.DisplayFor(model => Model.ToList()[8].img_product)" alt="">
+                            <div class="header-column">
+                                <h4 class="my-2">@Html.DisplayFor(model => Model.ToList()[8].product_name)</h4>
+                                <h3>@Model.ToList()[8].price.ToString().Remove(3)<i class="fas fa-ruble-sign"></i></h3>
+                                <a @*href="#popup_details"*@ class="popup-link">
+                                    <p class="text-right" name="9" onclick="AddText(this)">Подробнее ></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/Products/Index" class=" element-animation">
+                        <h6>Перейти к каталогу..</h6>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section-advantages" id="actuality">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading  element-animation">Доставка и оплата</h2>
+                </div>
+                <div class="row  element-animation">
+                    <div class="col-md-4">
+                        <div class="header-row">
+                            <img src="~/img/icon-delivery-1.png" alt="">
+                            <div class="header-column">
+                                <h4 class="my-3">Оформите заказ</h4>
+                                <p class="text-muted">
+                                    Наш менеджер свяжется с Вами для <br> уточнения деталей в течение
+                                    15
+                                    минут <br> после подтверждения заказа!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-row">
+                            <img src="~/img/icon-delivery-2.png" alt="">
+                            <div class="header-column">
+                                <h4 class="my-3">Совершите оплату</h4>
+                                <p class="text-muted">
+                                    Заказ можно удобно и комфортно <br> оплатить наличными при <br>
+                                    его
+                                    получении!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-row">
+                            <img src="~/img/icon-delivery-3.png" alt="">
+                            <div class="header-column">
+                                <h4 class="my-3 ">Получите сладости</h4>
+                                <p class="text-muted">
+                                    Доставка осуществляется качественно, <br> быстро и бесплатно в
+                                    любую
+                                    точку <br> самовывоза Новосибирска!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rev" id="reviews-sect">
+            <div class="wrap">
+                <!-- Контент -->
+                <div class="container text-center" id="reviews-sect-id">
+                    <div class="text-center">
+                        <h2 class="section-heading  element-animation">Отзывы наших покупателей</h2>
+                    </div>
+                    <div class="slider  element-animation">
+                        <div class="slider__item">
+                            <img src="~/img/rev-1.jpg" alt="">
+                            <div class="slide-rev">
+                                <div class="header-column">
+                                    <h4 class="my-2">Иван Иванов</h4>
+                                    <p class="text-muted">
+                                        Заказали в качестве подарка на день рождения&nbsp;чудесные
+                                        маффины с корицей! Могу отметить их превосходную кремовую начинку!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="~/img/rev-2.jpg" alt="">
+                            <div class="header-column">
+                                <h4 class="my-2">Маша Машева</h4>
+                                <p class="text-muted">
+                                    Приобрели в магазине несколько мини-пирожных и&nbsp;остались очень
+                                    довольны. Patetico&nbsp;-&nbsp;это&nbsp;прекрасное завершение праздника!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="~/img/rev-3.jpg" alt="">
+                            <div class="header-column">
+                                <h4 class="my-2">Лера Данина</h4>
+                                <p class="text-muted">
+                                    Магазин, как обычно, порадовал качественным сервисом и быстрой
+                                    доставкой. Вкусные сладости и чудесная связь с&nbsp;клиентом!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="~/img/rev-4.jpg" alt="">
+                            <div class="header-column">
+                                <h4 class="my-2">Катя Васина</h4>
+                                <p class="text-muted">
+                                    Привет! Очень порадовала начинка десерта“Царский”. Советую
+                                    абсолютно каждому попробовать этот шедевр вкуса самим!
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class=" element-animation">
+                        <h6>Перейти к каталогу..</h6>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase  element-animation">Контакты</h2>
+                    </div>
+                </div>
+                <div class="row  element-animation" id="contact-id">
+                    <div class="col-lg-12 lrgr">
+                        <address itemscope="" itemtype="http://schema.org/Organization">
+
+                            <span itemprop="name" class="col-12  element-animation">Patetico&Dolce</span>
+                            <br>
+
+                            <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"
+                                  class="row">
+
+                                <span class="col-12  element-animation">
+                                    Адрес:&nbsp;<span itemprop="postalCode">630017</span>,
+                                    г.&nbsp;<span itemprop="addressLocality">Новосибирск</span>,
+                                    <span itemprop="streetAddress">ул.&nbsp;Военная,&nbsp1</span>
+                                    <br>
+                                </span>
+
+                                <span class="col-12  element-animation">
+                                    Телефон:
+                                    <a href="tel:79137660987"><span itemprop="telephone">+7 913 005 69 85</span></a>
+                                    <span itemprop="hoursAvailable" itemscope=""
+                                          itemtype="http://schema.org/OpeningHoursSpecification">
+                                        (<span itemprop="opens">10:00</span>&nbsp;-&nbsp;<span itemprop="closes">19:00</span> по Новосибирскому времени GMT+7)
+                                    </span>
+                                    <br>
+                                </span>
+
+                                <span class="col-12  element-animation">
+                                    Электронная почта:
+                                    <a href="mailto:contact@itms.pro">
+                                        <span itemprop="email">contact@pateticosweetshop@gmail.com</span>
+                                    </a>
+                                    <br>
+                                </span>
+
+                            </span>
+
+                        </address>
+
+                        <!-- <iframe class="img-fluid"src="https://yandex.ru/map-widget/v1/?um=constructor%3A12c082553d8e42cb6d1e22f365c0c1a36c9cedf166a2bd8aba078ad74a2aaa91&amp;source=constructor" width="900" height="476" frameborder="0"></iframe> -->
+
+                        <script class=" element-animation" type="text/javascript" charset="utf-8" async
+                                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c1e6ce4055effe4c90a06b1307fc54990443ac08679c7a8e25e51621ee189cd&amp;width=85%&amp;height=538&amp;lang=ru_RU&amp;scroll=true">
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <img class="arrow-top" src="~/img/icons8-chevron-left.png" alt="">
+
+        <footer class="footer py-5">
+            <div class="container">
+                <div class="row align-items-center  element-animation">
+                    <div class="col-lg-4 offset-lg-1 text-lg-left">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+
+                        </script>. ООО ”Patetico&Dolce”, Новосибирск
+
+                        <!-- This script automatically adds the current year to your website footer-->
+                        <!-- (credit: https://updateyourfooter.com/)-->
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Подключаем слайдер Slick -->
+    <script src="~/Scripts/slick/slick.min.js"></script>
+    <!-- Подключаем файл скриптов -->
+    <script src="~/Scripts/slick/slick.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+    <script src="~/Scripts/jquery.maskedinput.min.js"></script>
+    @*старый слайдер <script src="~/Scripts/index.js"></script>*@
+
+    @*@Styles.Render("~/Content/datepicker.css")
+        @Scripts.Render("~/Scripts/jquery-3.3.1.min.js")
+        @Scripts.Render("~/Scripts/jquery.unobtrusive-ajax.min.js")
+        @Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js")
+        @Scripts.Render("~/Scripts/index.js")
+        @Scripts.Render("~/Scripts/CreateUser.js")
+        @Scripts.Render("~/Scripts/CheckUser.js")
+        @Scripts.Render("~/Scripts/datepicker.js")
+        @Scripts.Render("~/Scripts/jquery.maskedinput.min.js")*@
+
+
+    @*@section scripts{
+        <script type="text/javascript">
+            $(function () {
+                $('a[href^="#"]').on('click', function (event) {
+                    event.preventDefault();
+
+                    var sc = $(this).attr("href"),
+                        dn = $(sc).offset().top;
+                    $('html, body').animate({
+                        scrollTop: dn
+                    }, 1000);
+                });
+            });
+
+
+
+        </script>
+    }*@
+
+</body>
+
+</html>

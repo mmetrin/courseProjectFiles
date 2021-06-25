@@ -1,0 +1,34 @@
+﻿@model test1.Models.Products
+
+<div class=" row form-vertical-reg text-center details" style="margin-right:0; margin-left:0">
+    <div class=" col-md-6 col-10 text-center">
+        <img src="~/img/@Model.img_product" />
+        <h6>@Model.composition</h6>
+    </div>
+    <div class=" col-md-6 col-10 text-center details-2">
+        <h4>@Model.product_name</h4>
+        <h6>@Model.description</h6>
+        <div class="row details-fonts"> <h5 class="col-6 text-center" id="price">Цена товара за шт:</h5><h3>&nbsp;@Model.price.ToString().Remove(3)<i class="fas fa-ruble-sign"></i>&nbsp;/ @Model.weight.ToString().Remove(3) г</h3></div>
+        <div class="row details-fonts">
+            <h5 class="col-6 text-center">Количество товара:</h5>
+            @{
+                List<SelectListItem> list = new List<SelectListItem>();//Список значений для DDL
+
+                for (int i = 1; i <= 10; i++)
+                {
+                    list.Add(new SelectListItem() { Text = i.ToString() });//Заполняем его
+                }
+            }
+            <div class="select-det col-6 text-center">
+                @Html.DropDownList("AmountList", list, htmlAttributes: new { @class = "form-control DropAmount" })
+            </div>
+        </div>
+        <div class="inp-btn">
+            <input class="input-btn btn-add-basket" onclick="AddInBasket()" type="button" value="Добавить в корзину" />
+        </div>
+    </div>
+    <div class="hr-bottom hr-details">
+        <hr noshade style="margin-bottom:0.5em; height:0.01px" />
+        <p>*кол-во товара ограничено, изображение товара на сайте может отличаться от его фактического вида</p>
+    </div>
+</div>

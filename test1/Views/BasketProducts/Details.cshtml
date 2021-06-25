@@ -1,0 +1,42 @@
+﻿@model test1.Models.BasketProduct
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BasketProduct</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.count)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.count)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Basket.id_basket)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Basket.id_basket)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Products.product_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Products.product_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_basket_product }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
